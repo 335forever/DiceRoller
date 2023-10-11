@@ -43,7 +43,7 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(context, message, Toast.LENGTH_SHORT).show()
         }
 
-        val message:String = if (diceRoll.first==diceRoll.second) "Luck! A pair of ${diceRoll.first}"
+        val message:String = if (diceRoll.first==diceRoll.second) "Lucky! A pair of ${diceRoll.first}"
                              else "${diceRoll.first+diceRoll.second} point! "
         showToast(this, message)
     }
